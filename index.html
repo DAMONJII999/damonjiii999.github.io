@@ -14,17 +14,16 @@ font-family:Arial, sans-serif;
 }
 
 body{
-min-height:100vh;
+height:100vh;
 background:
-radial-gradient(circle at top,#5f2eea 0%,#120a35 40%,#05030f 100%);
+radial-gradient(circle at top,#7c3aed 0%,#120a35 35%,#000000 100%);
 color:white;
-overflow-x:hidden;
+overflow:hidden;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:20px;
+padding:10px;
 }
-
 .stars{
 position:fixed;
 width:100%;
@@ -40,8 +39,9 @@ opacity:.4;
 
 .card{
 width:100%;
-max-width:500px;
+max-width:420px;
 text-align:center;
+transform:scale(.85);
 }
 
 .live{
@@ -159,6 +159,77 @@ line-height:28px;
 }
 
 @media(max-width:600px){
+
+.card{
+transform:scale(.62);
+}
+
+.live{
+margin-bottom:15px;
+padding:8px 18px;
+font-size:12px;
+}
+
+.profile{
+width:130px;
+height:130px;
+box-shadow:
+0 0 20px #8f5cff,
+0 0 50px #4d8dff;
+}
+
+h1{
+font-size:28px;
+line-height:1.1;
+margin-top:15px;
+}
+
+.sub{
+font-size:14px;
+}
+
+.line{
+margin:15px auto;
+}
+
+.join{
+font-size:22px;
+padding:16px;
+border-radius:18px;
+background:linear-gradient(90deg,#7c3aed,#2563eb);
+}
+
+.timer{
+padding:18px;
+margin-top:18px;
+}
+
+.timer h3{
+font-size:14px;
+}
+
+#countdown{
+font-size:36px;
+}
+
+.stats{
+margin-top:20px;
+}
+
+.box h2{
+font-size:24px;
+}
+
+.box p{
+font-size:12px;
+}
+
+.footer{
+margin-top:20px;
+font-size:11px;
+line-height:18px;
+}
+}
 
 h1{
 font-size:34px;
